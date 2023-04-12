@@ -11,7 +11,7 @@ function StepThree() {
     // Input value comes from Redux (useSelector)
     const minutes = useSelector(store => store.minutes);
 
-    
+
     const handleChange = (event) => {
         const action = { type: 'SET_ACTIVITY_MINUTES', payload: event.target.value };
         dispatch(action);
@@ -31,7 +31,7 @@ function StepThree() {
             <h3>Step Three</h3>
             <form onSubmit={nextPage}>
                 <label htmlFor="minutes">Minutes:</label><br />
-                <input id="minutes" value={minutes} onChange={handleChange} type="text" />
+                <input id="minutes" value={minutes} onChange={handleChange} type="number" />
                 <input type="submit" value="Next" />
             </form>
         </>

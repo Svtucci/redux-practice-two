@@ -21,6 +21,7 @@ function StepFour () {
         dispatch(action);
     }
 
+    
     const nextPage = (event) => {
         event.preventDefault();
         if (miles > 0 ) {
