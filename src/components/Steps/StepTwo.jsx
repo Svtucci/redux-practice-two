@@ -10,6 +10,7 @@ function StepTwo() {
 
     // Input value comes from Redux (useSelector)
     const activityType = useSelector(store => store.activityType);
+    
     const handleChange = (event) => {
         const action = { type: 'SET_ACTIVITY_TYPE', payload: event.target.value };
         dispatch(action);

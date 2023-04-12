@@ -17,8 +17,8 @@ function StepFour () {
 
     // On input change, send the new value to redux
     const handleChange = (event) => {
-        const action = { type: 'SET_ACTIVITY_MILES', payload: event.target.value};
-        dispatch{action}; 
+        const action = { type: 'SET_ACTIVITY_MILES', payload: event.target.value };
+        dispatch(action);
     }
 
     const nextPage = (event) => {
