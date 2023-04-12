@@ -10,6 +10,8 @@ function StepThree() {
 
     // Input value comes from Redux (useSelector)
     const minutes = useSelector(store => store.minutes);
+
+    
     const handleChange = (event) => {
         const action = { type: 'SET_ACTIVITY_MINUTES', payload: event.target.value };
         dispatch(action);
