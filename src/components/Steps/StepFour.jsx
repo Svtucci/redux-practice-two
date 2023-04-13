@@ -21,7 +21,6 @@ function StepFour () {
         dispatch(action);
     }
 
-    
     const nextPage = (event) => {
         event.preventDefault();
         if (miles > 0 ) {
@@ -30,6 +29,7 @@ function StepFour () {
             alert('PLease enter a value greater tahn 0.')
         }
     }
+
     return (
         <>
             <h3>Step Four</h3>
