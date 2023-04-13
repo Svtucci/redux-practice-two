@@ -65,6 +65,15 @@ const miles = (state = 0, action) => {
     return state;
 }
 
+// REDUCER for activitylist
+
+const activities = (state = [], action) => {
+    if (action.type === 'SET_ACTIVITY_LIST') {
+        return action.payload; // which is new array from server 
+    }
+    return state;
+}
+
 const storeInstance = createStore(
     combineReducers(
         {
@@ -73,6 +82,7 @@ const storeInstance = createStore(
             activityType,
             minutes,
             miles,
+            activities, 
             // Other reducers go here
         }
     ),
